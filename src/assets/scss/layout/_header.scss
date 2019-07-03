@@ -1,0 +1,55 @@
+.header {
+  padding: 39px 0;
+  background: $dark;
+  position: relative;
+  z-index: 3;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: header-down .7s;
+  }
+
+  &.up {
+    animation: header-up .5s;
+  }
+
+  @keyframes header-up {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes header-down {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+.fixed + .main {
+  padding-top: 100px;
+}
+
+@include media('<phone') {
+  .header {
+    padding: 30px 0;
+  }
+}

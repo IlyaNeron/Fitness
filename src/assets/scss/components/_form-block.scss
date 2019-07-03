@@ -1,0 +1,53 @@
+.form-block {
+  color: #707070;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 0 25px;
+
+  h3 {
+    margin: 0 0 31px;
+  }
+
+  .btn-form {
+    margin: 2px 0 15px;
+    position: relative;
+    padding: 8px 35px 8px 20px;
+    text-align: left;
+
+    &:after {
+      content: '>';
+      position: absolute;
+      right: 21px;
+      top: 42%;
+      line-height: 1;
+      transform: translateY(-50%);
+      font-size: 22px;
+    }
+  }
+}
+
+@include media('<desktop') {
+  .form-block {
+    .btn-form {
+      font-size: 13px;
+      padding: 8px 30px 8px 10px;
+
+      &:after {
+        right: 15px;
+      }
+    }
+  }
+}
+
+@include media('<tablet') {
+  .form-block {
+    .btn-form {
+      font-size: 12px;
+      padding: 8px 25px 8px 10px;
+
+      &:after {
+        right: 10px;
+      }
+    }
+  }
+}

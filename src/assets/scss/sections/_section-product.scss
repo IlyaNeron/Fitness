@@ -1,0 +1,10 @@
+.section-product {
+  background: $red;
+  padding: 58px 0 6px;
+}
+
+@include media('<tablet') {
+  .section-product {
+    padding: 40px 0 15px;
+  }
+}

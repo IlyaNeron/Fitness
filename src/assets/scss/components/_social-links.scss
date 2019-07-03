@@ -1,0 +1,24 @@
+.social-links {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  color: $white;
+  margin: 0 0 25px 15px;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  a:hover {
+    color: $red;
+  }
+}
+
+@include media('<tablet') {
+  .social-links {
+    margin: 0 0 25px;
+    align-self: flex-end;
+  }
+}

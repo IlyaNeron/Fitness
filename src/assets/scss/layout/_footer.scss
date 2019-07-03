@@ -1,0 +1,30 @@
+.footer {
+  padding: 27px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  font-size: 12px;
+  font-weight: 300;
+
+  .back {
+    color: $red;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0 0 10px;
+  }
+}
+
+@include media('<tablet') {
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+@include media('<phone') {
+  .footer {
+    padding: 25px 0;
+  }
+}

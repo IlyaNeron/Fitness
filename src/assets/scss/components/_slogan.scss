@@ -1,0 +1,25 @@
+.slogan {
+  max-width: 440px;
+  margin: 0 auto 54px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+
+  h2 {
+    margin: 0 0 11px;
+    font-size: 30px;
+  }
+
+  .red {
+    color: $red;
+  }
+}
+
+@include media('<phone') {
+  .slogan {
+    margin: 0 auto 35px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+}

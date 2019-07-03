@@ -1,0 +1,31 @@
+.message-block {
+  max-width: 615px;
+  color: $white;
+  font-weight: 300;
+  position: relative;
+  margin: 0 15px 25px 0;
+
+  i {
+    position: absolute;
+    font-size: 24px;
+    left: 0;
+    top: 11px;
+  }
+
+  a {
+    padding-left: 40px;
+    display: block;
+    color: $light-gray;
+  }
+
+  span {
+    color: #717171;
+  }
+}
+
+@include media('<tablet') {
+  .message-block {
+    margin: 0 0 25px;
+    max-width: 100%;
+  }
+}

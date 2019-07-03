@@ -1,0 +1,88 @@
+.slide-info {
+  color: $white;
+  text-transform: uppercase;
+  max-width: 1170px;
+  padding: 0 130px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: flex-start;
+  font-family: $second-font-sans-serif;
+
+  span {
+    display: block;
+    background: $red;
+    margin-bottom: 2px;
+    padding: 9px 13px;
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    background: $dark;
+    color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+
+  h1 {
+    padding: 18px 20px;
+    font-size: 30px;
+  }
+
+  h2 {
+    padding: 12px 23px;
+    font-size: 18px;
+  }
+}
+
+@include media('<tablet') {
+  .slide-info {
+    h1 {
+      font-size: 26px;
+      padding: 15px;
+    }
+
+    h2 {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+
+    span {
+      padding: 8px 15px;
+    }
+  }
+}
+
+@include media('<phone') {
+  .slide-info {
+    padding: 0 80px;
+    h1 {
+      font-size: 22px;
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    span {
+      padding: 8px 10px;
+    }
+  }
+}
+
+@include media('<xs-phone') {
+  .slide-info {
+    padding: 0 50px;
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 13px;
+    }
+  }
+}

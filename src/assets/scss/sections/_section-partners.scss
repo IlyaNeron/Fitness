@@ -1,0 +1,9 @@
+.section-partners {
+  padding: 57px 0 39px;
+}
+
+@include media('<tablet') {
+  .section-partners {
+    padding: 40px 0 20px;
+  }
+}

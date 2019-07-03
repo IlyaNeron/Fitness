@@ -1,0 +1,48 @@
+.btn {
+  background: $btn-background-color;
+  color: $btn-color;
+  outline: none;
+  border: $btn-border;
+  padding: $btn-padding;
+  min-width: $btn-min-width;
+  cursor: pointer;
+  @include animate(border color background);
+  text-transform: uppercase;
+  font-size: $btn-font-size;
+  border-radius: $btn-border-radius;
+
+  &:hover {
+    background: $orange;
+    color: $white;
+  }
+
+  &-form {
+    min-width: $btn-form-min-width;
+    background: $btn-form-background;
+    border-radius: $btn-form-border-radius;
+    border: $btn-form-border;
+    color: $btn-form-color;
+    padding: $btn-form-padding;
+    font-family: $btn-form-font-family;
+
+    &:hover {
+      background: transparent;
+      border-color: $red;
+      color: $red;
+    }
+  }
+
+  &-blue {
+    background: $blue;
+  }
+
+  &-disabled {
+    cursor: auto;
+    border-color: #ff9575;
+    color: $medium-gray;
+    &:hover {
+      background-color: transparent;
+      color: $medium-gray;
+    }
+  }
+}

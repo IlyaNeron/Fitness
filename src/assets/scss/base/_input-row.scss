@@ -1,0 +1,23 @@
+.input-row {
+  margin: 0 -9px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-col-sm {
+  width: (100%/3);
+  padding: 0 9px;
+  margin: 0 0 15px;
+}
+
+.input-col-lg {
+  width: (100%/1.5);
+  padding: 0 9px;
+  margin: 0 0 15px;
+}
+
+@include media('<phone') {
+  .input-col-sm, .input-col-lg {
+    width: 100%;
+  }
+}

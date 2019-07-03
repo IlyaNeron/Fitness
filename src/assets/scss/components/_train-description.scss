@@ -1,0 +1,17 @@
+.train-description {
+  margin: 0 0 25px;
+  h3 {
+    margin: 0 0 15px;
+    padding-left: 37px;
+    position: relative;
+
+    i {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $red;
+      font-size: 20px;
+    }
+  }
+}

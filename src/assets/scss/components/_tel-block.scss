@@ -1,0 +1,63 @@
+.tel-block {
+  background: $red;
+  min-width: 177px;
+  position: absolute;
+  right: 15px;
+  top: 61px;
+  color: $white;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+  @include animate(background border-color);
+
+  &:hover {
+    background: $dark;
+    color: $white;
+  }
+
+  &:before {
+    content: "\e900";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: $burgundy;
+    width: 37px;
+  }
+
+  .icon-block {
+    padding: 0 10px;
+    background: $burgundy;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  span {
+    padding: 0 27px;
+  }
+}
+
+@include media('<tablet') {
+  .tel-block {
+    right: 15px;
+    top: 64px;
+  }
+}
+
+@include media('<phone') {
+  .tel-block {
+    top: 50px;
+  }
+}
